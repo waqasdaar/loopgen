@@ -1,0 +1,20 @@
+# LoopGen — Python dependency manifest
+# Install with: pip install -r requirements.txt
+#
+# Tested on: Ubuntu 20.04 / 22.04 / 24.04 + FRR 8.x / 9.x / 10.x
+# Python   : 3.8 — 3.12
+
+# ── Kernel networking ─────────────────────────────────────────────
+# pyroute2: Pure-Python netlink library for all kernel networking ops.
+# Used for VRF discovery, interface creation/deletion, IP assignment.
+# No shell commands are used for any networking operation.
+pyroute2>=0.7.0
+
+# ── Terminal tables ───────────────────────────────────────────────
+# prettytable: Renders interface overview tables.
+# Version guard: 3.x required for set_style() API.
+prettytable>=3.0.0
+
+# ── Colored terminal output ───────────────────────────────────────
+# colorama: Cross-terminal ANSI color support.
+colorama>=0.4.6
