@@ -277,7 +277,7 @@ EOF
 python3 -c "import pyroute2, prettytable, colorama; print('OK')"
 
 # Quick pre-flight check (no interfaces created)
-sudo python3 LoopGen.py --help 2>/dev/null || echo "Run without args"
+sudo python3 loopgen.py --help 2>/dev/null || echo "Run without args"
 
 # Create a test VRF to verify kernel VRF support
 sudo ip link add vrf-test type vrf table 99
@@ -296,10 +296,10 @@ LoopGen requires root privileges for RTNETLINK socket operations:
 
 ```bash
 # Standard invocation
-sudo python3 LoopGen.py
+sudo python3 loopgen.py
 
 # With virtual environment
-sudo /path/to/venv/bin/python LoopGen.py
+sudo /path/to/venv/bin/python loopgen.py
 ```
 
 On successful startup you will see the banner followed by the main menu:
@@ -896,7 +896,7 @@ After interface-level operations (loopback creation, BGP network advertisement),
 python3 --version    # Must be 3.8+
 
 # Check root privileges
-sudo python3 LoopGen.py
+sudo python3 loopgen.py
 
 # Check dependencies
 python3 -c "import pyroute2, prettytable, colorama; print('OK')"
