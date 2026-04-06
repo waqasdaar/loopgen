@@ -59,7 +59,7 @@
 
 ## Introduction
 
-**LoopGen** is a production-grade interactive command-line tool for **Ubuntu Linux** that manages the complete lifecycle of loopback (dummy) interfaces in **VRF-aware** network environments. It integrates directly with **FRR (Free Range Routing)** to automate routing protocol advertisement alongside every interface operation.
+**LoopGen** is a production-grade interactive command-line tool for **Ubuntu Linux** that manages the complete lifecycle of loopback (dummy) interfaces in **VRF-aware** network environments. It integrates directly with **[FRR (Free Range Routing)](https://frrouting.org/)** to automate routing protocol advertisement alongside every interface operation.
 
 The tool is designed for **network automation engineers**, **lab operators**, and **infrastructure teams** who need to rapidly provision, test, and decommission loopback prefixes across multiple VRFs without writing one-off scripts or manually coordinating kernel operations with FRR configuration.
 
